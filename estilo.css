@@ -1,47 +1,53 @@
 
 @charset "UTF-8";
 
-
+body{
+    background-color: rgb(68, 68, 68);
+}
 #main {
     display: grid;
     grid-template-columns: 250px 250px 250px 250px;
-    grid-template-rows: 160px 100px 100px 100px 100px 100px;
+    grid-template-rows: 300px 100px 100px 100px 100px ;
     line-height: 100px;
     text-align: center;
 
 }
 #botao-C{
-    
+    color: white;
     font-size: 40px;
-    background-color: grey;
+    background-color: rgb(133, 0, 0);
+    grid-row: 2;
+    grid-column: 4;
     font-family: 'Bungee Spice', cursive;
     font-family: 'Indie Flower', cursive; 
+    margin: 5px;
 }
 .botao-operador {
     font-size: 40px;
-    background-color: rgb(255, 170, 91);
+    background-color: rgb(56, 56, 56);
     font-family: 'Bungee Spice', cursive;
     font-family: 'Indie Flower', cursive;
-
+    color: orange;
+    margin: 5px;
 }
 
 .botao-numero{
     font-size: 40px;
-    background-color: grey;
+    background-color: rgb(255, 255, 255);
     font-family: 'Bungee Spice', cursive;
     font-family: 'Indie Flower', cursive;
-
+    margin: 5px;
 }
 #visor{
     grid-column: 1/5;
-    background-color: rgb(52, 45, 45);
+    background-color: rgb(0, 0, 0);
     color: white;
-    border: 4px black solid;
-    border-radius: 50px 50px 0px 0px;
+    border: 4px rgb(0, 0, 0) solid;
+    border-radius: 50px 50px 50px 50px;
     font-size: 65px;
     font-family: 'Bungee Spice', cursive;
     font-family: 'Indie Flower', cursive;
-
+    margin: 5px;
 }
 
 body {
@@ -57,21 +63,24 @@ body {
 #botao-igual {
     grid-row: 3 / 7;
     grid-column: 4;
-    border-radius: 0px 0px 50px 0px;
+    border-radius: 50px 50px 50px 50px;
     font-size: 90px;
     background-color: grey;
     font-family: 'Bungee Spice', cursive;
     font-family: 'Indie Flower', cursive;
+    margin: 5px;
+
 }
-
-
-
+#nao{
+    margin-top: 150px;
+}
 .botao {
     transition: 0.5s;
     border: 2px solid black ;
+    border-radius: 80px 80px 80px 80px;
 }
 
-button:hover,
+.botao:hover,
 #botao-igual:hover {
     background-color: rgb(0, 0, 0);
     color: white;
