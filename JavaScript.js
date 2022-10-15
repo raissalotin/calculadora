@@ -82,6 +82,17 @@ function realiza_operacao(valor1, operacao, valor2) {
 }
 
 
+let botaoPonto = document.getElementById("botao-ponto");
+botaoPonto.addEventListener('click',clicaPonto);
+function clicaPonto (event){
+    if(isNaN(visor.innerHTML)=== true){
+        visor.innerHTML = '.';
+    }
+    else if(isNaN (visor.innerHTML+'.')=== false)
+    visor.innerHTML = visor.innerHTML + '.';
+}
+
+
 
 let body = document.getElementsByTagName("body")[0];
 body.addEventListener("keydown", pressionou_tecla);
@@ -97,5 +108,43 @@ function pressionou_tecla(event) {
     }
     else if (event.key === "/") {
         document.getElementById("botao-divisao").click();
+    }
+    else if (event.key === "0"){
+        document.getElementById("numero0").click();
+    }
+    else if (event.key === "1"){
+        document.getElementById("numero1").click();
+    }
+    else if (event.key === "2"){
+        document.getElementById("numero2").click();
+    }
+    else if (event.key === "3"){
+        document.getElementById("numero3").click();
+    }
+    else if (event.key === "4"){
+        document.getElementById("numero4").click();
+    }
+    else if (event.key === "5"){
+        document.getElementById("numero5").click();
+    }
+    else if (event.key === "6"){
+        document.getElementById("numero6").click();
+    }
+    else if (event.key === "7"){
+        document.getElementById("numero7").click();
+    }
+    else if (event.key === "8"){
+        document.getElementById("numero8").click();
+    }else if (event.key === "9"){
+        document.getElementById("numero9").click();
+    }
+    else if (event.key === "."){
+        document.getElementById("botao-ponto").click()
+    }
+    else if (event.key === "Enter"){
+        document.getElementById("botao-igual").click()
+    }
+    else if(event.key === "Backspace"){
+        document.getElementById("botao-C").click()
     }
 }
